@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelMate Hrvatska | Destinacije</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/destinacije.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">TravelMate Hrvatska</a>
+    <button class="nav-toggle" type="button" aria-label="Otvori navigaciju" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Glavna navigacija">
+      <a href="index.html">Naslovna</a>
+      <a class="active" href="destinacije.html">Destinacije</a>
+      <a href="planer.html">Planer</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">Destinacije</p>
+      <h1>Popularni prijedlozi za vikend i dulji odmor</h1>
+      <p>Filtriraj destinacije prema tipu putovanja i pronađi ideju koja ti najviše odgovara.</p>
+    </section>
+
+    <section class="section">
+      <div class="filter-bar" aria-label="Filter destinacija">
+        <button class="filter-button active" type="button" data-filter="sve">Sve</button>
+        <button class="filter-button" type="button" data-filter="more">More</button>
+        <button class="filter-button" type="button" data-filter="priroda">Priroda</button>
+        <button class="filter-button" type="button" data-filter="grad">Grad</button>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card" data-category="more">
+          <div class="destination-image split"></div>
+          <div class="card-body">
+            <h2>Split</h2>
+            <p>Sunčana obala, Dioklecijanova palača i izleti prema otocima.</p>
+            <span>Od 95 EUR / dan</span>
+          </div>
+        </article>
+        <article class="destination-card" data-category="grad">
+          <div class="destination-image zagreb"></div>
+          <div class="card-body">
+            <h2>Zagreb</h2>
+            <p>Muzeji, parkovi, dobra hrana i odlična baza za jednodnevne izlete.</p>
+            <span>Od 70 EUR / dan</span>
+          </div>
+        </article>
+        <article class="destination-card" data-category="priroda">
+          <div class="destination-image plitvice"></div>
+          <div class="card-body">
+            <h2>Plitvička jezera</h2>
+            <p>Šetnice, slapovi i miran odmor u jednom od najpoznatijih parkova.</p>
+            <span>Od 85 EUR / dan</span>
+          </div>
+        </article>
+        <article class="destination-card" data-category="more">
+          <div class="destination-image rovigno"></div>
+          <div class="card-body">
+            <h2>Rovinj</h2>
+            <p>Romantična stara jezgra, biciklističke rute i istarska gastronomija.</p>
+            <span>Od 90 EUR / dan</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 TravelMate Hrvatska. Projekt iz HTML5, CSS3 i JavaScripta.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelMate Hrvatska | Kontakt</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/kontakt.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">TravelMate Hrvatska</a>
+    <button class="nav-toggle" type="button" aria-label="Otvori navigaciju" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Glavna navigacija">
+      <a href="index.html">Naslovna</a>
+      <a href="destinacije.html">Destinacije</a>
+      <a href="planer.html">Planer</a>
+      <a class="active" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Pošalji upit za putovanje</h1>
+      <p>Obrazac demonstrira validaciju, obradu događaja i spremanje podataka u localStorage.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <form class="contact-form" id="contact-form">
+        <label>
+          Ime i prezime
+          <input id="name" type="text" placeholder="npr. Eugen Deur" required>
+        </label>
+        <label>
+          Email
+          <input id="email" type="email" placeholder="ime@email.com" required>
+        </label>
+        <label>
+          Željena destinacija
+          <select id="contact-destination">
+            <option>Zagreb</option>
+            <option>Split</option>
+            <option>Plitvička jezera</option>
+            <option>Rovinj</option>
+          </select>
+        </label>
+        <label>
+          Poruka
+          <textarea id="message" rows="5" placeholder="Napiši što želiš posjetiti..." required></textarea>
+        </label>
+        <button class="button primary" type="submit">Pošalji upit</button>
+      </form>
+
+      <aside class="result-panel">
+        <p class="eyebrow">Status</p>
+        <h2 id="contact-status">Čekamo tvoj upit</h2>
+        <p id="contact-preview">Nakon slanja ovdje će se prikazati sažetak poruke.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 TravelMate Hrvatska. Projekt iz HTML5, CSS3 i JavaScripta.</p>
+  </footer>
+</body>
+</html>

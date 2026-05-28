@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelMate Hrvatska | Planer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/planer.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">TravelMate Hrvatska</a>
+    <button class="nav-toggle" type="button" aria-label="Otvori navigaciju" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Glavna navigacija">
+      <a href="index.html">Naslovna</a>
+      <a href="destinacije.html">Destinacije</a>
+      <a class="active" href="planer.html">Planer</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">Planer</p>
+      <h1>Izračun okvirnog budžeta</h1>
+      <p>Unesi osnovne podatke i dobit ćeš brzu procjenu ukupnog troška putovanja.</p>
+    </section>
+
+    <section class="section planner-layout">
+      <form class="planner-form" id="planner-form">
+        <label>
+          Destinacija
+          <select id="destination" required>
+            <option value="70">Zagreb - 70 EUR po osobi/dan</option>
+            <option value="95">Split - 95 EUR po osobi/dan</option>
+            <option value="85">Plitvička jezera - 85 EUR po osobi/dan</option>
+            <option value="90">Rovinj - 90 EUR po osobi/dan</option>
+          </select>
+        </label>
+        <label>
+          Broj putnika
+          <input id="travelers" type="number" min="1" max="12" value="2" required>
+        </label>
+        <label>
+          Broj dana
+          <input id="days" type="number" min="1" max="30" value="3" required>
+        </label>
+        <label>
+          Stil putovanja
+          <select id="style">
+            <option value="0.9">Ekonomično</option>
+            <option value="1" selected>Standardno</option>
+            <option value="1.25">Udobno</option>
+          </select>
+        </label>
+        <button class="button primary" type="submit">Izračunaj</button>
+      </form>
+
+      <aside class="result-panel" aria-live="polite">
+        <p class="eyebrow">Procjena</p>
+        <h2 id="budget-result">0 EUR</h2>
+        <p id="budget-note">Ispuni obrazac i klikni na izračun.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 TravelMate Hrvatska. Projekt iz HTML5, CSS3 i JavaScripta.</p>
+  </footer>
+</body>
+</html>
